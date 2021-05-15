@@ -58,12 +58,11 @@ def generateOutput(json):
     ## Generate output
     output = "Status for \n"
     for host in hosts:
-        if ((hosts[host]['warning'] > 0) or (hosts[host]['critical'] > 0)):
-            output += '{hostName}: Critical {critical}; Warning {warning}\n'.format(
-                hostName=host,
-                critical=hosts[host]['critical'],
-                warning=hosts[host]['warning']
-            )
+        output += '{hostName}: Critical {critical}; Warning {warning}\n'.format(
+            hostName=host,
+            critical=hosts[host]['critical'],
+            warning=hosts[host]['warning']
+        )
     
     return output[:-1]
 
