@@ -1,0 +1,5 @@
+check_mk      = 'http://{insert IP here}/APPSolve/check_mk/'
+check_mk_auth = 'Bearer {check_mk username} {check_mk password}'
+
+telegram_auth    = '{telegram auth token}' # example: '0000000000:AAAAA-BBBBBBBBBBBB-CCCCC-DD'
+telegram_chat_id = '{chat id}'
